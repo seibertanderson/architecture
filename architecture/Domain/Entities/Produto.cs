@@ -10,5 +10,8 @@ namespace Domain.Entities
     {
         public long pro_id { get; set; }
         public string pro_nome { get; set; }
+
+        //ONE-TO-MANY RELASHIONSHIP
+        public virtual Empresa empresa { get; set; }
     }
 }

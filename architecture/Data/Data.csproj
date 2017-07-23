@@ -50,11 +50,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\AppContext.cs" />
+    <Compile Include="EntityConfig\ClienteConfig.cs" />
+    <Compile Include="EntityConfig\EmpresaConfig.cs" />
     <Compile Include="EntityConfig\ProdutoConfig.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Migrations\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
   <ItemGroup>
@@ -66,6 +68,9 @@
       <Project>{639F453D-F1BC-43E3-A188-4D6FA0EE0398}</Project>
       <Name>Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TutorialEF.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -11,7 +11,7 @@ namespace Data.Context
 {
     public class AppContext : DbContext
     {
-        public AppContext() : base("name=NomeBanco")
+        public AppContext() : base("name=DBPedidos")
         {
             this.Configuration.LazyLoadingEnabled = true;
         }
@@ -29,6 +29,7 @@ namespace Data.Context
             modelBuilder.Properties<string>().Configure(el => el.HasMaxLength(255));
 
             modelBuilder.Configurations.Add(new ProdutoConfig());
+            modelBuilder.Configurations.Add(new EmpresaConfig());
 
             base.OnModelCreating(modelBuilder);
         }

@@ -1,0 +1,10 @@
+﻿1-No App.config adicionar a string de conexão
+  <connectionStrings>
+    <add name="NomeBanco" providerName="System.Data.SqlClient" connectionString="Server=(localdb)\v11.0;Database=NomeBanco;Integrated Security=True;" />
+  </connectionStrings>
+
+2-Após isso abrir o package manager console e rodar Enable-Migrations no projeto que contem os processos referente ao banco de dados
+3-Apos Rodar um update-database -verbose
+
+OBS: o nome do banco é definido no AppContext e precisa ser igual ao App.Config
+OBS: apos gerar o banco é necessario abrir o server explorer e conectar ao mesmo
